@@ -181,7 +181,7 @@ module.exports = {
                 options: {
                   // @remove-on-eject-begin
                   babelrc: false,
-                  presets: [require.resolve('babel-preset-react-app')],
+                  presets: [require.resolve('babel-preset-react-app-babel-7')],
                   // @remove-on-eject-end
                   compact: true,
                 },

@@ -1,6 +1,6 @@
 {
-  "name": "eslint-config-react-app",
-  "version": "2.1.0",
+  "name": "eslint-config-react-app-babel-7",
+  "version": "3.0.1",
   "description": "ESLint configuration used by Create React App",
   "repository": "facebookincubator/create-react-app",
   "license": "MIT",

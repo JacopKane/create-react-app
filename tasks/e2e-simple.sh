@@ -99,12 +99,12 @@ yarn config set registry "$custom_registry_url"
 npx npm-cli-login@0.0.10 -u user -p password -e user@example.com -r "$custom_registry_url" --quotes
 
 # Lint own code
-./node_modules/.bin/eslint --max-warnings 0 packages/babel-preset-react-app/
+./node_modules/.bin/eslint --max-warnings 0 packages/babel-preset-react-app-babel-7/
 ./node_modules/.bin/eslint --max-warnings 0 packages/confusing-browser-globals/
-./node_modules/.bin/eslint --max-warnings 0 packages/create-react-app/
+./node_modules/.bin/eslint --max-warnings 0 packages/create-react-app-babel-7/
 ./node_modules/.bin/eslint --max-warnings 0 packages/eslint-config-react-app/
-./node_modules/.bin/eslint --max-warnings 0 packages/react-dev-utils/
-./node_modules/.bin/eslint --max-warnings 0 packages/react-scripts/
+./node_modules/.bin/eslint --max-warnings 0 packages/react-dev-utils-babel-7/
+./node_modules/.bin/eslint --max-warnings 0 packages/react-scripts-babel-7/
 
 cd packages/react-error-overlay/
 ./node_modules/.bin/eslint --max-warnings 0 src/
