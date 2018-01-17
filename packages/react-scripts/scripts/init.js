@@ -17,8 +17,8 @@ process.on('unhandledRejection', err => {
 const fs = require('fs-extra');
 const path = require('path');
 const chalk = require('chalk');
-const spawn = require('react-dev-utils/crossSpawn');
-const { defaultBrowsers } = require('react-dev-utils/browsersHelper');
+const spawn = require('react-dev-utils-babel-7/crossSpawn');
+const { defaultBrowsers } = require('react-dev-utils-babel-7/browsersHelper');
 const os = require('os');
 
 module.exports = function(

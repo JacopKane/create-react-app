@@ -8,9 +8,9 @@
 // @remove-on-eject-end
 'use strict';
 
-const errorOverlayMiddleware = require('react-dev-utils/errorOverlayMiddleware');
-const noopServiceWorkerMiddleware = require('react-dev-utils/noopServiceWorkerMiddleware');
-const ignoredFiles = require('react-dev-utils/ignoredFiles');
+const errorOverlayMiddleware = require('react-dev-utils-babel-7/errorOverlayMiddleware');
+const noopServiceWorkerMiddleware = require('react-dev-utils-babel-7/noopServiceWorkerMiddleware');
+const ignoredFiles = require('react-dev-utils-babel-7/ignoredFiles');
 const config = require('./webpack.config.dev');
 const paths = require('./paths');
 
