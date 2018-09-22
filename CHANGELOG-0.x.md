@@ -12,7 +12,7 @@
 
 #### :nail_care: Enhancement
 
-* `eslint-config-react-app`
+* `eslint-config-react-app-next`
 
   * [#1773](https://github.com/facebook/create-react-app/pull/1773) Remove `guard-for-in` lint rule. ([@spicyj](https://github.com/spicyj))
 
@@ -28,7 +28,7 @@
 
 #### :house: Internal
 
-* `babel-preset-react-app`
+* `babel-preset-react-app-next`
 
   * [#1742](https://github.com/facebook/create-react-app/pull/1742) Switch to `babel-preset-env` to remove the deprecation warning. ([@Timer](https://github.com/Timer))
 
@@ -67,14 +67,14 @@ npm install --save-dev --save-exact react-scripts@0.9.5
 
   * [#1721](https://github.com/facebook/create-react-app/pull/1721) Fix hot reloading for WebpackDevServer after eject. ([@gaearon](https://github.com/gaearon))
 
-* `react-dev-utils`
+* `react-dev-utils-next`
 
   * [#1690](https://github.com/facebook/create-react-app/pull/1690) Fix `openBrowser()` when `BROWSER=open` on macOS. ([@bpierre](https://github.com/bpierre))
 
   * [#1696](https://github.com/facebook/create-react-app/pull/1696) Improve reliability of port detection. ([@chrisdrackett](https://github.com/chrisdrackett))
 
 #### :nail_care: Enhancement
-* `eslint-config-react-app`, `react-scripts`
+* `eslint-config-react-app-next`, `react-scripts`
 
   * [#1705](https://github.com/facebook/create-react-app/pull/1705) Add support for `ignoreRestSiblings` in `no-unused-vars`. ([@chrisdrackett](https://github.com/chrisdrackett))
 
@@ -82,9 +82,9 @@ npm install --save-dev --save-exact react-scripts@0.9.5
 
   * [#1542](https://github.com/facebook/create-react-app/pull/1542) Bump `jsx-a11y` version. ([@bondz](https://github.com/bondz))
 
-* `react-dev-utils`, `react-scripts`
+* `react-dev-utils-next`, `react-scripts`
 
-  * [#1726](https://github.com/facebook/create-react-app/pull/1726) Extract generic build functions into `react-dev-utils`. ([@viankakrisna](https://github.com/viankakrisna))
+  * [#1726](https://github.com/facebook/create-react-app/pull/1726) Extract generic build functions into `react-dev-utils-next`. ([@viankakrisna](https://github.com/viankakrisna))
 
 * Other
 
@@ -102,11 +102,11 @@ npm install --save-dev --save-exact react-scripts@0.9.5
   * [#1736](https://github.com/facebook/create-react-app/pull/1736) Fix eject for linked react-scripts. ([@tuchk4](https://github.com/tuchk4))
   * [#1741](https://github.com/facebook/create-react-app/pull/1741) Fix internal linting setup. ([@gaearon](https://github.com/gaearon))
   * [#1730](https://github.com/facebook/create-react-app/pull/1730) Fix Node 4 e2e tests. ([@Timer](https://github.com/Timer))
-* `eslint-config-react-app`
+* `eslint-config-react-app-next`
   * [#1740](https://github.com/facebook/create-react-app/pull/1740) Relax ESLint config peerDependency. ([@gaearon](https://github.com/gaearon))
-* `eslint-config-react-app`, `react-dev-utils`, `react-scripts`
+* `eslint-config-react-app-next`, `react-dev-utils-next`, `react-scripts`
   * [#1729](https://github.com/facebook/create-react-app/pull/1729) Lint internal scripts with `eslint:recommended`. ([@gaearon](https://github.com/gaearon))
-* `react-dev-utils`
+* `react-dev-utils-next`
   * [#1724](https://github.com/facebook/create-react-app/pull/1724) Don't use ES6 in a file that should run on Node 4. ([@gaearon](https://github.com/gaearon))
 * Other
   * [#1723](https://github.com/facebook/create-react-app/pull/1723) Skip AppVeyor CI builds for Markdown changes. ([@gaearon](https://github.com/gaearon))
@@ -271,7 +271,7 @@ npm install -g create-react-app@1.2.1
   * [#1275](https://github.com/facebook/create-react-app/pull/1275) Suggest yarn commands in addition to npm. ([@lifez](https://github.com/lifez))
 
 #### :house: Internal
-* `babel-preset-react-app`
+* `babel-preset-react-app-next`
   * [#1598](https://github.com/facebook/create-react-app/pull/1598) Remove redundant babel-plugin-transform-es2015-parameters. ([@christophehurpeau](https://github.com/christophehurpeau))
 * Other
   * [#1534](https://github.com/facebook/create-react-app/pull/1534) Use yarn@latest in e2e. ([@gaearon](https://github.com/gaearon))
@@ -356,7 +356,7 @@ Thanks to [@Timer](https://github.com/timer) for cutting this release.
 
     This makes all environment variables previously available in JS, also available in the HTML file, for example `%REACT_APP_MY_VARIABLE%`. See [Referencing Environment Variables in HTML](https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md#referencing-environment-variables-in-the-html).
 
-* `react-dev-utils`
+* `react-dev-utils-next`
 
   * [#1148](https://github.com/facebook/create-react-app/pull/1148) Configure which browser to open with `npm start`. ([@GAumala](https://github.com/GAumala))
 
@@ -372,7 +372,7 @@ Thanks to [@Timer](https://github.com/timer) for cutting this release.
 
     Jest has been updated to 18 and has introduced some [breaking changes and new features](https://facebook.github.io/jest/blog/2016/12/15/2016-in-jest.html).
 
-* `react-scripts`, `react-dev-utils`
+* `react-scripts`, `react-dev-utils-next`
 
   * [#1264](https://github.com/facebook/create-react-app/pull/1264) Remove interactive shell check when opening browser on start. ([@CaryLandholt](https://github.com/CaryLandholt))
 
@@ -391,7 +391,7 @@ Thanks to [@Timer](https://github.com/timer) for cutting this release.
   * [#1309](https://github.com/facebook/create-react-app/pull/1309) Bump `babel-loader` version (#1009). ([@frontsideair](https://github.com/frontsideair))
   * [#1267](https://github.com/facebook/create-react-app/pull/1267) Only gitignore directories in root, not deep. ([@jayphelps](https://github.com/jayphelps))
 
-* `react-dev-utils`
+* `react-dev-utils-next`
 
   * [#1377](https://github.com/facebook/create-react-app/pull/1377) webpack-dev-server patch for 'still-ok' success status. ([@TheBlackBolt](https://github.com/TheBlackBolt))
   * [#1274](https://github.com/facebook/create-react-app/pull/1274) Downgrading to compatible version of SockJS-Client. ([@holloway](https://github.com/holloway))
@@ -437,7 +437,7 @@ Thanks to [@Timer](https://github.com/timer) for cutting this release.
 * READMEs
 
   * [#1375](https://github.com/facebook/create-react-app/pull/1375) Change console.log for errors and warnings. ([@jimmyhmiller](https://github.com/jimmyhmiller))
-  * [#1369](https://github.com/facebook/create-react-app/pull/1369) Add missing import in react-dev-utils README.md. ([@pedronauck](https://github.com/pedronauck))
+  * [#1369](https://github.com/facebook/create-react-app/pull/1369) Add missing import in react-dev-utils-next README.md. ([@pedronauck](https://github.com/pedronauck))
 
 #### :house: Internal
 
@@ -538,7 +538,7 @@ npm install -g create-react-app@1.0.3
 
     We added [Subresource Integrity](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity) checks to the build output in 0.8.2 but it turns out that they may fail in browsers using special compression proxies, such as Chrome on Android, when served over HTTP. We disabled the checks until we can find a safe way to add them.
 
-* `react-dev-utils`
+* `react-dev-utils-next`
 
   * [#1226](https://github.com/facebook/create-react-app/pull/1226) Fix weird lint output. ([@n3tr](https://github.com/n3tr))
 
@@ -585,16 +585,16 @@ npm install -g create-react-app@1.0.3
 
     Adds `create-react-app --help` with a list of options.
 
-* `react-dev-utils`
+* `react-dev-utils-next`
 
   * [#1211](https://github.com/facebook/create-react-app/pull/1211) Use a better clear console sequence. ([@gaearon](https://github.com/gaearon))
 
     Ensures the development server clears the terminal when files are changed.
 
 #### :memo: Documentation
-* `react-dev-utils`
+* `react-dev-utils-next`
 
-  * [#1232](https://github.com/facebook/create-react-app/pull/1232) [documentation] fix html-dev-plugin link in react-dev-utils doc. ([@shogunsea](https://github.com/shogunsea))
+  * [#1232](https://github.com/facebook/create-react-app/pull/1232) [documentation] fix html-dev-plugin link in react-dev-utils-next doc. ([@shogunsea](https://github.com/shogunsea))
 
 * `react-scripts`
 
@@ -698,18 +698,18 @@ npm install -g create-react-app@1.0.1
 
     Since 0.8.0, we are treating all imports with non-JS/CSS extensions the same way. Importing them gives you a string with their URL, and if their content is small enough (less than 10K), the URL is in fact an inlined [data URI](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URIs). However, this doesn't work well with SVGs in case you use them for a sprite system since fragments don't work in data URIs, and it's wasteful to inline the same sprite SVG many times. To fix this, we have added an exception so that SVG files never get inlined.
 
-* `react-dev-utils`
+* `react-dev-utils-next`
   * [#1165](https://github.com/facebook/create-react-app/pull/1165) Chrome 'open tab' reuse an empty tab when possible. ([@n3tr](https://github.com/n3tr))
 
     Fixes an issue that caused two tabs to get opened instead of just one. It also fixes some cases where the window with the existing tab would not get activated.
 
-* `babel-preset-react-app`
+* `babel-preset-react-app-next`
   * [#1179](https://github.com/facebook/create-react-app/pull/1179) Fix Babel issues in tests by applying the right transforms. ([@gaearon](https://github.com/gaearon))
 
     Fixes regressions in test environment that caused syntax errors with generators and `async` / `await`.
 
 #### :nail_care: Enhancement
-* `eslint-config-react-app`
+* `eslint-config-react-app-next`
   * [#1191](https://github.com/facebook/create-react-app/pull/1191) Relax peerDependencies for ESLint preset. ([@gaearon](https://github.com/gaearon))
 
     This allows the preset to be used in more apps without peer dependency conflicts. We still pin the exact versions in apps that haven't ejected for extra safety.
@@ -798,10 +798,10 @@ Thanks to [@fson](https://github.com/fson) for cutting this release.
     ```
 
 #### :boom: Breaking Change
-* `babel-preset-react-app`
+* `babel-preset-react-app-next`
   * [#902](https://github.com/facebook/create-react-app/pull/902) Enable useBuiltIns option on object-rest-spread. ([@existentialism](https://github.com/existentialism))
 
-    Object rest spread and JSX now use the native `Object.assign()` method instead of Babel's helper function. If you are using `babel-preset-react-app` directly in your project *and* targeting browsers that don't have `Object.assign()` available, from now on you need a polyfill for it (e.g. [`object-assign`](https://www.npmjs.com/package/object-assign)).
+    Object rest spread and JSX now use the native `Object.assign()` method instead of Babel's helper function. If you are using `babel-preset-react-app-next` directly in your project *and* targeting browsers that don't have `Object.assign()` available, from now on you need a polyfill for it (e.g. [`object-assign`](https://www.npmjs.com/package/object-assign)).
 
     **Note:** `react-scripts` already adds this polyfill, so no changes are necessary in Create React App projects.
 
@@ -819,7 +819,7 @@ Thanks to [@fson](https://github.com/fson) for cutting this release.
 
     Fixes a bug where `eject` failed when a `scripts` or `config` folder already existed in the project.
 
-* `react-dev-utils`
+* `react-dev-utils-next`
   * [#1035](https://github.com/facebook/create-react-app/pull/1035) Fix Chrome tab reuse. ([@einarlove](https://github.com/einarlove))
 
     Fixes a bug with the app not opening in the existing tab in Chrome.
@@ -828,7 +828,7 @@ Thanks to [@fson](https://github.com/fson) for cutting this release.
 
     Not being able to open a browser doesn't crash the development server now.
 
-* `eslint-config-react-app`, `react-scripts`
+* `eslint-config-react-app-next`, `react-scripts`
   * [#953](https://github.com/facebook/create-react-app/pull/953) Fix `.ico` file extension being handled by test configuration. ([@vadzim](https://github.com/vadzim))
 
 #### :nail_care: Enhancement
@@ -846,7 +846,7 @@ Thanks to [@fson](https://github.com/fson) for cutting this release.
     The test script now considers all files in the project when calculating test coverage.
 
   * [#968](https://github.com/facebook/create-react-app/pull/968) Enable gzip compression in the development server (#966). ([@frontsideair](https://github.com/frontsideair))
-* `react-dev-utils`, `react-scripts`
+* `react-dev-utils-next`, `react-scripts`
   * [#816](https://github.com/facebook/create-react-app/pull/816) add logging of existing default port process on start. ([@ianmcnally](https://github.com/ianmcnally))
 
     `react-scripts` can guess which process is running on the port 3000 when it's not available:
@@ -857,8 +857,8 @@ Thanks to [@fson](https://github.com/fson) for cutting this release.
 
     Would you like to run the app on another port instead?
     ```
-* `react-dev-utils`
-  * [#963](https://github.com/facebook/create-react-app/pull/963) Allow webpack 2 as a peerDependency in react-dev-utils. ([@einarlove](https://github.com/einarlove))
+* `react-dev-utils-next`
+  * [#963](https://github.com/facebook/create-react-app/pull/963) Allow webpack 2 as a peerDependency in react-dev-utils-next. ([@einarlove](https://github.com/einarlove))
 
 #### :memo: Documentation
 * `react-scripts`
@@ -879,7 +879,7 @@ Thanks to [@fson](https://github.com/fson) for cutting this release.
   * [#1068](https://github.com/facebook/create-react-app/pull/1068) Remove bundledDependencies. ([@fson](https://github.com/fson))
   * [#1057](https://github.com/facebook/create-react-app/pull/1057) Update `css-loader`. ([@nhajidin](https://github.com/nhajidin))
   * [#983](https://github.com/facebook/create-react-app/pull/983) Remove custom babel-loader cache dir config. ([@fson](https://github.com/fson))
-* `babel-preset-react-app`
+* `babel-preset-react-app-next`
   * [#1052](https://github.com/facebook/create-react-app/pull/1052) Remove unnecessary transform plugins for object spread to work. ([@valscion](https://github.com/valscion))
   * [#992](https://github.com/facebook/create-react-app/pull/992) Explain the usage of react-jsx-source & react-jsx-self. ([@bboysathish](https://github.com/bboysathish))
   * [#1051](https://github.com/facebook/create-react-app/pull/1051) Update babel-present-env and use node: 'current' as target. ([@valscion](https://github.com/valscion))
@@ -943,19 +943,19 @@ Thanks to [@fson](https://github.com/fson) for cutting this release.
 * Fixes environment variables not being defined as normal properties of the `process.env` object. ([@dvkndn](https://github.com/dvkndn) in [#807](https://github.com/facebook/create-react-app/pull/807))
 * Fixes PostCSS autoprefixer not processing CSS files imported with CSS `@import` statements. ([@nhunzaker](https://github.com/nhunzaker) in [#929](https://github.com/facebook/create-react-app/pull/929))
 
-### ESLint Config (`eslint-config-react-app`)
+### ESLint Config (`eslint-config-react-app-next`)
 
 * Adds `import/no-webpack-loader-syntax` rule that forbids using custom Webpack specific syntax to specify Webpack loaders in import statements. ([@fson](https://github.com/fson) in [#803](https://github.com/facebook/create-react-app/pull/803))
 * `react/react-in-jsx-scope` rule ("React must be in scope") is now an error. ([@gaearon](https://github.com/gaearon) in [#822](https://github.com/facebook/create-react-app/pull/822))
 * `no-unused-expressions` rule now allows the use of short circuit and ternary expressions. ([@cannona](https://github.com/cannona) in [#724](https://github.com/facebook/create-react-app/pull/724))
 
-### Babel Preset (`babel-preset-react-app`)
+### Babel Preset (`babel-preset-react-app-next`)
 
 * The preset now detects the Node.js version in test environment and disables unnecessary ES2015 transforms using `babel-preset-env`. ([@shubheksha](https://github.com/shubheksha) in [#878](https://github.com/facebook/create-react-app/pull/878), [@JeffreyATW](https://github.com/JeffreyATW) in [#927
 ](https://github.com/facebook/create-react-app/pull/927))
 * Fixes a duplicate dependency on `babel-plugin-transform-regenerator`. ([@akofman](https://github.com/akofman) in [#864](https://github.com/facebook/create-react-app/pull/864))
 
-### Utilities (`react-dev-utils`)
+### Utilities (`react-dev-utils-next`)
 
 * The error overlay is now disposed after fixing linting errors. ([@jarlef](https://github.com/jarlef) in [#856](https://github.com/facebook/create-react-app/pull/856))
 * Adds support for Webpack 2 to `webpackHotDevClient`. ([@michalkvasnicak](https://github.com/michalkvasnicak) in [#840](https://github.com/facebook/create-react-app/pull/840))
@@ -994,7 +994,7 @@ npm test -- -u
 
 * Babel and ESLint configuration is now placed into `package.json` after ejecting. ([@montogeek](https://github.com/montogeek) in [#773](https://github.com/facebook/create-react-app/pull/773))
 
-### Utilities (`react-dev-utils`)
+### Utilities (`react-dev-utils-next`)
 
 * Fixes the syntax error overlay padding. ([@fson](https://github.com/fson) in [#758](https://github.com/facebook/create-react-app/pull/758))
 
@@ -1012,7 +1012,7 @@ npm install --save-dev --save-exact react-scripts@0.6.1
 
 * Adds an overlay for syntax errors in development. ([@gaearon](https://github.com/gaearon) in [#744](https://github.com/facebook/create-react-app/pull/744))
 
-### Utilities (`react-dev-utils`)
+### Utilities (`react-dev-utils-next`)
 
 * Adds an alternative WebpackDevServer client that displays the error overlay. ([@gaearon](https://github.com/gaearon) in [#744](https://github.com/facebook/create-react-app/pull/744))
 
@@ -1030,9 +1030,9 @@ npm install --save-dev --save-exact react-scripts@0.6.0
 
 ### Build Dependency (`react-scripts`)
 
-* Updates `react-dev-utils` dependency
+* Updates `react-dev-utils-next` dependency
 
-### Utilities (`react-dev-utils`)
+### Utilities (`react-dev-utils-next`)
 
 * Fixes `%PUBLIC_URL%` replacement to work when specified multiple times. ([@fson](https://github.com/fson) in [#731](https://github.com/facebook/create-react-app/pull/731))
 
@@ -1056,16 +1056,16 @@ npm install --save-dev --save-exact react-scripts@0.5.1
 * The projects generated with `eject` are now cleaner. ([@gaearon](https://github.com/gaearon) in [#723](https://github.com/facebook/create-react-app/pull/723))
 * The project is now managed as a monorepo. ([@ryanyogan](https://github.com/ryanyogan) in [#419](https://github.com/facebook/create-react-app/pull/419), [@fson](https://github.com/fson) in [#678](https://github.com/facebook/create-react-app/pull/678))
 
-### ESLint Config (`eslint-config-react-app`)
+### ESLint Config (`eslint-config-react-app-next`)
 
 * Published for the first time! ([@fson](https://github.com/fson) in [#689](https://github.com/facebook/create-react-app/pull/689))
 * Added [`react/no-danger-with-children`](https://github.com/yannickcr/eslint-plugin-react/blob/v6.3.0/docs/rules/no-danger-with-children.md) and [`react/style-prop-object`](https://github.com/yannickcr/eslint-plugin-react/blob/v6.3.0/docs/rules/style-prop-object.md) rules. ([@fson](https://github.com/fson) in [#696](https://github.com/facebook/create-react-app/pull/696))
 
-### Babel Preset (`babel-preset-react-app`)
+### Babel Preset (`babel-preset-react-app-next`)
 
 * Published for the first time! ([@fson](https://github.com/fson) in [#701](https://github.com/facebook/create-react-app/pull/701))
 
-### Utilities (`react-dev-utils`)
+### Utilities (`react-dev-utils-next`)
 
 * Published for the first time! ([@gaearon](https://github.com/gaearon) in [#723](https://github.com/facebook/create-react-app/pull/723))
 
@@ -1085,7 +1085,7 @@ npm install --save-dev --save-exact react-scripts@0.5.0
 
 #### Global ESLint Plugin Versions
 
-If you used a global ESLint installation for the editor integration, you’ll need to install [these versions of global ESLint packages](https://github.com/facebook/create-react-app/blob/c092086b1b256fd081f10744f90d216dd5217e29/packages/eslint-config-react-app/package.json#L14-L19).
+If you used a global ESLint installation for the editor integration, you’ll need to install [these versions of global ESLint packages](https://github.com/facebook/create-react-app/blob/c092086b1b256fd081f10744f90d216dd5217e29/packages/eslint-config-react-app-next/package.json#L14-L19).
 
 #### Moving `index.html` into `public` Folder
 

@@ -12,19 +12,19 @@ const autoprefixer = require('autoprefixer');
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const InlineChunkHtmlPlugin = require('react-dev-utils/InlineChunkHtmlPlugin');
+const InlineChunkHtmlPlugin = require('react-dev-utils-next/InlineChunkHtmlPlugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const safePostCssParser = require('postcss-safe-parser');
 const ManifestPlugin = require('webpack-manifest-plugin');
-const InterpolateHtmlPlugin = require('react-dev-utils/InterpolateHtmlPlugin');
+const InterpolateHtmlPlugin = require('react-dev-utils-next/InterpolateHtmlPlugin');
 const SWPrecacheWebpackPlugin = require('sw-precache-webpack-plugin');
-const ModuleScopePlugin = require('react-dev-utils/ModuleScopePlugin');
-const getCSSModuleLocalIdent = require('react-dev-utils/getCSSModuleLocalIdent');
+const ModuleScopePlugin = require('react-dev-utils-next/ModuleScopePlugin');
+const getCSSModuleLocalIdent = require('react-dev-utils-next/getCSSModuleLocalIdent');
 const paths = require('./paths');
 const getClientEnvironment = require('./env');
-const getCacheIdentifier = require('react-dev-utils/getCacheIdentifier');
+const getCacheIdentifier = require('react-dev-utils-next/getCacheIdentifier');
 
 // Webpack uses `publicPath` to determine where the app is being served from.
 // It requires a trailing slash, or the file assets will get an incorrect path.
@@ -223,13 +223,15 @@ module.exports = {
         use: [
           {
             options: {
-              formatter: require.resolve('react-dev-utils/eslintFormatter'),
+              formatter: require.resolve(
+                'react-dev-utils-next/eslintFormatter'
+              ),
               eslintPath: require.resolve('eslint'),
               // @remove-on-eject-begin
               // TODO: consider separate config for production,
               // e.g. to enable no-console and no-debugger only in production.
               baseConfig: {
-                extends: [require.resolve('eslint-config-react-app')],
+                extends: [require.resolve('eslint-config-react-app-next')],
                 settings: { react: { version: '999.999.999' } },
               },
               ignore: false,
@@ -270,22 +272,22 @@ module.exports = {
                 options: {
                   // @remove-on-eject-begin
                   babelrc: false,
-                  presets: [require.resolve('babel-preset-react-app')],
+                  presets: [require.resolve('babel-preset-react-app-next')],
                   // Make sure we have a unique cache identifier, erring on the
                   // side of caution.
                   // We remove this when the user ejects because the default
                   // is sane and uses Babel options. Instead of options, we use
-                  // the react-scripts and babel-preset-react-app versions.
+                  // the react-scripts and babel-preset-react-app-next versions.
                   cacheIdentifier: getCacheIdentifier('production', [
-                    'babel-plugin-named-asset-import',
-                    'babel-preset-react-app',
-                    'react-dev-utils',
-                    'react-scripts',
+                    'babel-plugin-named-asset-import-next',
+                    'babel-preset-react-app-next',
+                    'react-dev-utils-next',
+                    'react-scripts-next',
                   ]),
                   // @remove-on-eject-end
                   plugins: [
                     [
-                      require.resolve('babel-plugin-named-asset-import'),
+                      require.resolve('babel-plugin-named-asset-import-next'),
                       {
                         loaderMap: {
                           svg: {
@@ -319,17 +321,17 @@ module.exports = {
                   babelrc: false,
                   compact: false,
                   presets: [
-                    require.resolve('babel-preset-react-app/dependencies'),
+                    require.resolve('babel-preset-react-app-next/dependencies'),
                   ],
                   cacheDirectory: true,
                   // Save disk space when time isn't as important
                   cacheCompression: true,
                   // @remove-on-eject-begin
                   cacheIdentifier: getCacheIdentifier('production', [
-                    'babel-plugin-named-asset-import',
-                    'babel-preset-react-app',
-                    'react-dev-utils',
-                    'react-scripts',
+                    'babel-plugin-named-asset-import-next',
+                    'babel-preset-react-app-next',
+                    'react-dev-utils-next',
+                    'react-scripts-next',
                   ]),
                   // @remove-on-eject-end
                   highlightCode: true,

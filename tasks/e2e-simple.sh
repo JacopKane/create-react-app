@@ -64,10 +64,10 @@ cd ..
 root_path=$PWD
 
 # Make sure we don't introduce accidental references to PATENTS.
-EXPECTED='packages/react-error-overlay/fixtures/bundle.mjs
-packages/react-error-overlay/fixtures/bundle.mjs.map
-packages/react-error-overlay/fixtures/bundle_u.mjs
-packages/react-error-overlay/fixtures/bundle_u.mjs.map
+EXPECTED='packages/react-error-overlay-next/fixtures/bundle.mjs
+packages/react-error-overlay-next/fixtures/bundle.mjs.map
+packages/react-error-overlay-next/fixtures/bundle_u.mjs
+packages/react-error-overlay-next/fixtures/bundle_u.mjs.map
 tasks/e2e-simple.sh'
 ACTUAL=$(git grep -l PATENTS)
 if [ "$EXPECTED" != "$ACTUAL" ]; then
@@ -98,14 +98,14 @@ yarn config set registry "$custom_registry_url"
 (cd && npx npm-auth-to-token@1.0.0 -u user -p password -e user@example.com -r "$custom_registry_url")
 
 # Lint own code
-./node_modules/.bin/eslint --max-warnings 0 packages/babel-preset-react-app/
-./node_modules/.bin/eslint --max-warnings 0 packages/confusing-browser-globals/
+./node_modules/.bin/eslint --max-warnings 0 packages/babel-preset-react-app-next/
+./node_modules/.bin/eslint --max-warnings 0 packages/confusing-browser-globals-next/
 ./node_modules/.bin/eslint --max-warnings 0 packages/create-react-app/
-./node_modules/.bin/eslint --max-warnings 0 packages/eslint-config-react-app/
-./node_modules/.bin/eslint --max-warnings 0 packages/react-dev-utils/
+./node_modules/.bin/eslint --max-warnings 0 packages/eslint-config-react-app-next/
+./node_modules/.bin/eslint --max-warnings 0 packages/react-dev-utils-next/
 ./node_modules/.bin/eslint --max-warnings 0 packages/react-scripts/
 
-cd packages/react-error-overlay/
+cd packages/react-error-overlay-next/
 ./node_modules/.bin/eslint --max-warnings 0 src/
 yarn test
 if [ $APPVEYOR != 'True' ]; then
@@ -114,11 +114,11 @@ if [ $APPVEYOR != 'True' ]; then
 fi
 cd ../..
 
-cd packages/react-dev-utils/
+cd packages/react-dev-utils-next/
 yarn test
 cd ../..
 
-cd packages/confusing-browser-globals/
+cd packages/confusing-browser-globals-next/
 yarn test
 cd ../..
 

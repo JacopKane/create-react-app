@@ -32,7 +32,7 @@ if [ -n "$(git status --porcelain)" ]; then
 fi
 
 # Compile
-cd packages/react-error-overlay/
+cd packages/react-error-overlay-next/
 npm run build:prod
 cd ../..
 # Go!

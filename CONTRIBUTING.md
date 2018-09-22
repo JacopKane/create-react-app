@@ -48,23 +48,23 @@ These packages can be found in the [`packages/`](https://github.com/facebook/cre
 ### Overview of directory structure
 ```
 packages/
-  babel-preset-react-app/
+  babel-preset-react-app-next/
   create-react-app/
-  eslint-config-react-app/
-  react-dev-utils/
+  eslint-config-react-app-next/
+  react-dev-utils-next/
   react-scripts/
 ```
 ### Package Descriptions
-#### [babel-preset-react-app](https://github.com/facebook/create-react-app/tree/master/packages/babel-preset-react-app)
+#### [babel-preset-react-app-next](https://github.com/facebook/create-react-app/tree/master/packages/babel-preset-react-app-next)
 This package is a babel preset intended to be used with `react-scripts`.<br>
 It targets platforms that React is designed to support (IE 9+) and enables experimental features used heavily at Facebook.<br>
 This package is enabled by default for all `create-react-app` scaffolded applications.
 #### [create-react-app](https://github.com/facebook/create-react-app/tree/master/packages/create-react-app)
 The global CLI command code can be found in this directory, and shouldn't often be changed. It should run on Node 0.10+.
-#### [eslint-config-react-app](https://github.com/facebook/create-react-app/tree/master/packages/eslint-config-react-app)
+#### [eslint-config-react-app-next](https://github.com/facebook/create-react-app/tree/master/packages/eslint-config-react-app-next)
 This package contains a conservative set of rules focused on making errors apparent and enforces no style rules.<br>
 This package is enabled by default for all `create-react-app` scaffolded applications.
-#### [react-dev-utils](https://github.com/facebook/create-react-app/tree/master/packages/react-dev-utils)
+#### [react-dev-utils-next](https://github.com/facebook/create-react-app/tree/master/packages/react-dev-utils-next)
 This package contains utilities used for `react-scripts` and sister packages.<br>
 Its main purpose is to conceal code which the user shouldn't be burdened with upon ejecting.
 #### [react-scripts](https://github.com/facebook/create-react-app/tree/master/packages/react-scripts)

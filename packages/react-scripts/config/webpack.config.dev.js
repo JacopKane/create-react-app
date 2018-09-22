@@ -13,14 +13,14 @@ const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin');
-const InterpolateHtmlPlugin = require('react-dev-utils/InterpolateHtmlPlugin');
-const WatchMissingNodeModulesPlugin = require('react-dev-utils/WatchMissingNodeModulesPlugin');
-const ModuleScopePlugin = require('react-dev-utils/ModuleScopePlugin');
-const getCSSModuleLocalIdent = require('react-dev-utils/getCSSModuleLocalIdent');
+const InterpolateHtmlPlugin = require('react-dev-utils-next/InterpolateHtmlPlugin');
+const WatchMissingNodeModulesPlugin = require('react-dev-utils-next/WatchMissingNodeModulesPlugin');
+const ModuleScopePlugin = require('react-dev-utils-next/ModuleScopePlugin');
+const getCSSModuleLocalIdent = require('react-dev-utils-next/getCSSModuleLocalIdent');
 const getClientEnvironment = require('./env');
 const paths = require('./paths');
 const ManifestPlugin = require('webpack-manifest-plugin');
-const getCacheIdentifier = require('react-dev-utils/getCacheIdentifier');
+const getCacheIdentifier = require('react-dev-utils-next/getCacheIdentifier');
 
 // Webpack uses `publicPath` to determine where the app is being served from.
 // In development, we always serve from the root. This makes config easier.
@@ -94,7 +94,7 @@ module.exports = {
     // the line below with these two lines if you prefer the stock client:
     // require.resolve('webpack-dev-server/client') + '?/',
     // require.resolve('webpack/hot/dev-server'),
-    require.resolve('react-dev-utils/webpackHotDevClient'),
+    require.resolve('react-dev-utils-next/webpackHotDevClient'),
     // Finally, this is your app's code:
     paths.appIndexJs,
     // We include the app code last so that if there is a runtime error during
@@ -181,11 +181,13 @@ module.exports = {
         use: [
           {
             options: {
-              formatter: require.resolve('react-dev-utils/eslintFormatter'),
+              formatter: require.resolve(
+                'react-dev-utils-next/eslintFormatter'
+              ),
               eslintPath: require.resolve('eslint'),
               // @remove-on-eject-begin
               baseConfig: {
-                extends: [require.resolve('eslint-config-react-app')],
+                extends: [require.resolve('eslint-config-react-app-next')],
                 settings: { react: { version: '999.999.999' } },
               },
               ignore: false,
@@ -232,22 +234,22 @@ module.exports = {
                 options: {
                   // @remove-on-eject-begin
                   babelrc: false,
-                  presets: [require.resolve('babel-preset-react-app')],
+                  presets: [require.resolve('babel-preset-react-app-next')],
                   // Make sure we have a unique cache identifier, erring on the
                   // side of caution.
                   // We remove this when the user ejects because the default
                   // is sane and uses Babel options. Instead of options, we use
-                  // the react-scripts and babel-preset-react-app versions.
+                  // the react-scripts and babel-preset-react-app-next versions.
                   cacheIdentifier: getCacheIdentifier('development', [
-                    'babel-plugin-named-asset-import',
-                    'babel-preset-react-app',
-                    'react-dev-utils',
-                    'react-scripts',
+                    'babel-plugin-named-asset-import-next',
+                    'babel-preset-react-app-next',
+                    'react-dev-utils-next',
+                    'react-scripts-next',
                   ]),
                   // @remove-on-eject-end
                   plugins: [
                     [
-                      require.resolve('babel-plugin-named-asset-import'),
+                      require.resolve('babel-plugin-named-asset-import-next'),
                       {
                         loaderMap: {
                           svg: {
@@ -288,17 +290,17 @@ module.exports = {
                   babelrc: false,
                   compact: false,
                   presets: [
-                    require.resolve('babel-preset-react-app/dependencies'),
+                    require.resolve('babel-preset-react-app-next/dependencies'),
                   ],
                   cacheDirectory: true,
                   // Don't waste time on Gzipping the cache
                   cacheCompression: false,
                   // @remove-on-eject-begin
                   cacheIdentifier: getCacheIdentifier('development', [
-                    'babel-plugin-named-asset-import',
-                    'babel-preset-react-app',
-                    'react-dev-utils',
-                    'react-scripts',
+                    'babel-plugin-named-asset-import-next',
+                    'babel-preset-react-app-next',
+                    'react-dev-utils-next',
+                    'react-scripts-next',
                   ]),
                   // @remove-on-eject-end
                   highlightCode: true,

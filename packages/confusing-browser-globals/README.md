@@ -1,4 +1,4 @@
-# confusing-browser-globals
+# confusing-browser-globals-next
 
 A curated list of browser globals that commonly cause confusion and are not recommended to use without an explicit `window.` qualifier.
 
@@ -18,30 +18,27 @@ handleClick() { // missing `event` argument
 
 This package exports a list of globals that are often used by mistake. You can feed this list to a static analysis tool like ESLint to prevent their usage without an explicit `window.` qualifier.
 
-
 ## Installation
 
 ```
-npm install --save confusing-browser-globals
+npm install --save confusing-browser-globals-next
 ```
-
 
 ## Usage
 
-If you use Create React App, you don't need to configure anything, as this rule is already included in the default `eslint-config-react-app` preset.
+If you use Create React App, you don't need to configure anything, as this rule is already included in the default `eslint-config-react-app-next` preset.
 
 If you maintain your own ESLint configuration, you can do this:
 
 ```js
-var restrictedGlobals = require('confusing-browser-globals');
+var restrictedGlobals = require('confusing-browser-globals-next');
 
 module.exports = {
   rules: {
     'no-restricted-globals': ['error'].concat(restrictedGlobals),
-  }
+  },
 };
 ```
-
 
 ## License
 

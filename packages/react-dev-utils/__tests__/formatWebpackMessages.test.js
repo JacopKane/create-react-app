@@ -38,10 +38,10 @@ describe('formats various webpack errors correctly', () => {
   it('module not found', () => {
     const json = {
       errors: [
-        "./template/src/App.js\nModule not found: Error: Can't resolve 'blabla' in '/Users/joe/Documents/Development/OSS/create-react-app/packages/react-scripts/template/src'\n @ ./template/src/App.js 5:0-25\n @ ./template/src/index.js\n @ multi ./config/polyfills.js ../react-dev-utils/webpackHotDevClient.js ./template/src/index.js",
+        "./template/src/App.js\nModule not found: Error: Can't resolve 'blabla' in '/Users/joe/Documents/Development/OSS/create-react-app/packages/react-scripts/template/src'\n @ ./template/src/App.js 5:0-25\n @ ./template/src/index.js\n @ multi ./config/polyfills.js ../react-dev-utils-next/webpackHotDevClient.js ./template/src/index.js",
       ],
       warnings: [
-        "./template/src/App.js\nModule Warning (from /Users/joe/Documents/Development/OSS/create-react-app/node_modules/thread-loader/dist/cjs.js):\n\n  \u001b[1mLine 5:\u001b[22m  'bla' is defined but never used  \u001b[33m\u001b[4mno-unused-vars\u001b[24m\u001b[39m\n\n\n @ ./template/src/index.js 5:0-24 7:36-39\n @ multi ./config/polyfills.js ../react-dev-utils/webpackHotDevClient.js ./template/src/index.js",
+        "./template/src/App.js\nModule Warning (from /Users/joe/Documents/Development/OSS/create-react-app/node_modules/thread-loader/dist/cjs.js):\n\n  \u001b[1mLine 5:\u001b[22m  'bla' is defined but never used  \u001b[33m\u001b[4mno-unused-vars\u001b[24m\u001b[39m\n\n\n @ ./template/src/index.js 5:0-24 7:36-39\n @ multi ./config/polyfills.js ../react-dev-utils-next/webpackHotDevClient.js ./template/src/index.js",
       ],
     };
 
